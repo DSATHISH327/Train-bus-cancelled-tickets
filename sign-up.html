@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+        body{
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            background-image: url("https://media.istockphoto.com/id/1437012928/photo/uncompleted-high-speed-railway.webp?a=1&b=1&s=612x612&w=0&k=20&c=fSZG_GEy_mdcaV479eaZkc_Xa444p-kB2E9vnw9xTQY=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+        }
+        .navbar{
+            height: 30px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        .navbar-unordered-list-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+       a{
+        text-decoration: none;
+       }
+       .main-section{
+        height: 450px;
+        width: 100%;
+       }
+       .contact-us{
+        height: 150px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+       }
+       .contact-us-navbar-unordred-list{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        font-size: 50px;
+       }
+       .contact-us-navbar-logos{
+        margin: 10px;
+       }
+       .sign-up-section{
+        height: 400px;
+        width: 55%;
+        margin-top: 40px;
+        border: 2px solid;
+        margin-left: 300px;
+        border-radius: 30px;
+        
+       }
+       .sign-up-section-heading{
+        text-align: center;
+       }
+       label{
+        margin-left: 50px;
+        font-size: 20px;
+       }
+       .Surname{
+        margin-left: 120px;
+        height: 30px;
+        margin-top: 7px;
+        width: 240px;
+       }
+       .Firstname{
+        margin-left: 105px;
+        height: 30px;
+        margin-top: 7px;
+        width: 240px;
+       }
+       .Aadhar-card-number{
+        margin-left: 20px;
+        height: 40px;
+        width: 240px;
+        margin-top: 7px;
+       }
+       .date-of-birth{
+        margin-left: 90px;
+        height: 40px;
+        width: 240px;
+        margin-top: 7px;
+       }
+       .textarea{
+        height: 40px;
+        margin-left: 130px;
+        margin-top: 7px;
+        width: 240px;
+       }
+       .sign-up-button{
+        height: 40px;
+        width: 160px;
+        margin-top: 7px;
+        margin-left: 300px;
+        border-radius: 20px;
+        background-color: cyan;
+       }
+       .sign-up-section-matter{
+        text-align: center;
+       }
+       marquee{
+        height: 40px;
+        font-size: 27px;
+        background-color: greenyellow;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        font-family: "Tangerine", serif;
+        font-weight: 800;
+        font-style: normal;
+        border: 4px solid red;
+        border-right: none;
+        border-left: none;
+        margin-top: 1px;
+       }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <ul class="navbar-unordered-list-1">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="sign-up.html">Sign-up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="">Contact-us</a></li>
+            </ul>
+        </div>
+        <marquee behavior="scroll" direction="left">Wish you a Happy Journey!! If you want to Cancal your Unplanned Train & Bus Ticket please Upload here!! It is Helpful for some Millions of People!! Get your full refund Amount from necessary Person!
+            Please Upload thoroughly it is useful for families & Pregnent Women's! Don't Bargain Here! Get your Full refund Amount !! Just Tap like I'm Interested for take a Ticket!!
+           Don't Do Time pass here!! Respect others!!</marquee>
+    </div>
+    <div class="main-section">
+        <div class="sign-up-section">
+            <h4 class="sign-up-section-heading">Sign-up</h4>
+            <label for="Surname">Surname</label>
+            <input type="text" name="Surname" id="Surname" class="Surname"><br>
+            <label for="Firstname">FirstName</label>
+            <input type="text" name="FirstName" id="FirstName" class="Firstname"><br>
+            <label for="Aadhar-card-number">Aadhar Card Number</label>
+            <input type="tel" name="Aadhar-card-number" id="Aadhar-card-number" class="Aadhar-card-number"><br>
+            <label for="Date-of-birth">Date of Birth</label>
+            <input type="date" name="Date-of-birth" id="Date-of-birth" class="date-of-birth"><br>
+            <label for="Address">Address</label>
+            <textarea name="Address" id="Address" class="textarea"></textarea><br>
+            <button type="submit" class="sign-up-button" onclick="sign_up()">Sign-up</button>
+            <p class="sign-up-section-matter">If you've Already Account? <a href="login.html">Login-here..</a></p>
+
+        </div>
+    </div>
+    <div class="contact-us">
+        <div class="contact-us-navbar">
+            <ul class="contact-us-navbar-unordred-list">
+                <li class="contact-us-navbar-logos"><a href="https://wa.me/919347742603?text=Hello!%20I%20have%20a%20" title="Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.instagram.com/satish_tarak_fan/profilecard/?igsh=MWR2OWFvbHFqN3QwNA==" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.facebook.com/sathishyadav.desiboinasathish?mibextid=ZbWKwL" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.linkedin.com/in/satish-desaboina-71356824a?" title="Linkdin"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="mailto:sathishdesaboina42@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function sign_up() {
+        let Surname = document.getElementById("Surname").value;
+        let FirstName = document.getElementById("FirstName").value;
+        let Aadhar_card_number = document.getElementById("Aadhar-card-number").value;
+        let Date_of_birth = document.getElementById("Date-of-birth").value;
+        let Address = document.getElementById("Address").value;
+
+        if (!Surname || !FirstName || !Aadhar_card_number || !Date_of_birth || !Address) {
+        window.alert("Please fill out all fields");
+        } else {
+        console.log("All fields are filled out");
+        }
+        }
+
+    </script>
+</body>
+</html>

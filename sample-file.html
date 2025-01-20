@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+        body{
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            position: relative;
+        }
+        .navbar{
+            height: 30px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        .navbar-unordered-list-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main-section{
+            height: 520px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-section-div-1, .main-section-div-3 {
+            height: 500px;
+            width: 15%;
+            border: 1px solid;
+            border-radius: 30px;
+        }
+        .main-section-div-2 {
+            height: 500px;
+            width: 57%;
+            margin-left: 30px;
+            border: 1px solid;
+            border-radius: 30px;
+        }
+        .main-heading{
+            text-align: center;
+        }
+        .main-section-elements{
+            height: 340px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 60px 40px 50px 30px;
+        }
+        .Trains, .buses{
+            height: 240px;
+            width:240px;
+            border: 1px solid;
+            border-radius: 20px;
+            position: relative;
+        }
+        .trains-image, .buses-image{
+            height: 200px;
+            width: 250px;
+            border-radius: 20px;
+        }
+        .buses-image{
+            height: 150px;
+            width: 175px;
+            border-radius: 50%;
+            margin: 20px 20px;
+        }
+        .trains-heading, .buses-heading {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+        }
+        .contact-us{
+            height: 150px;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+        .contact-us-navbar-unordred-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 50px;
+            list-style-type: none;
+        }
+        .contact-us-navbar-logos{
+            margin: 10px;
+        }
+        marquee{
+            height: 30px;
+            font-size: 27px;
+            background-color: greenyellow;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+            font-family: "Tangerine", serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+        .welcome{
+            height: 150px;
+            width: 330px;
+            border: 2px solid;
+            align-items: center;
+            border-radius: 30px;
+            animation: scaleAnimation 3s forwards;
+            margin-left: 450px;
+            margin-top: -150px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-irctc{
+            height: 70px;
+            width: 70px;
+            border-radius: 30px;
+        }
+        .welcome-heading{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        @keyframes scaleAnimation {
+            0% {
+                margin-top: -150px;
+                transform: scale(0.1);
+            }
+            100% {
+                transform: scale(1.2);
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+        <img class="img-irctc" src="https://5.imimg.com/data5/SELLER/Default/2021/2/GI/JR/US/4184318/irctc-agentship-provider-500x500.png" alt="IRCTC Logo">
+        <h1 class="welcome-heading">Welcome To Indian Railways</h1>
+    </div>
+    <div class="header">
+        <div class="navbar">
+            <ul class="navbar-unordered-list-1">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="sign-up.html">Sign-up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href=".contact-us">Contact-us</a></li>
+            </ul>
+        </div>
+        <marquee behavior="scroll" direction="left">Wish you a Happy Journey!! If you want to cancel your Unplanned Train & Bus Ticket please Upload here!! It is Helpful for millions of people!! Get your full refund amount from the necessary person!</marquee>
+    </div>
+    <div class="main-section">
+        <div class="main-section-div-1"></div>
+        <div class="main-section-div-2">
+            <h1 class="main-heading">Find a Ticket & Give away your Ticket</h1>
+            <div class="main-section-elements">
+                <a href="upload-train-ticket.html">
+                    <div class="Trains">
+                        <img class="trains-image" src="https://logowik.com/content/uploads/images/indian-railways3115.jpg" alt="Trains">
+                        <h2 class="trains-heading">Trains</h2>
+                    </div>
+                </a>
+                <a href="upload-bus-ticket.html">
+                    <div class="buses">
+                        <img class="buses-image" src="https://t4.ftcdn.net/jpg/04/57/42/73/360_F_457427304_LLE97vYBBiSqk5YsBlpZ0Dps4aaZf1BZ.jpg" alt="Buses">
+                        <h2 class="buses-heading">Buses</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-section-div-3"></div>
+    </div>
+    <div class="contact-us">
+        <div class="contact-us-navbar">
+            <ul class="contact-us-navbar-unordred-list">
+                <li class="contact-us-navbar-logos"><a href="https://wa.me/919347742603?text=Hello!%20I%20have%20a%20" title="Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.instagram.com/satish_tarak_fan/profilecard/?igsh=MWR2OWFvbHFqN3QwNA==" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.facebook.com/sathishyadav.desiboinasathish?mibextid=ZbWKwL" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="https://www.linkedin.com/in/satish-desaboina-71356824a?" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="contact-us-navbar-logos"><a href="mailto:sathishdesaboina42@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
