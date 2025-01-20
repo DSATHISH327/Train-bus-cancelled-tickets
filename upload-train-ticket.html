@@ -211,47 +211,8 @@
         <h4 id="s7"></h4>
     </div>
     <script>
-        const journeyData = [];
-
-        function upload_a_ticket(){
-        let BOARDING_POINT = document.getElementById("Boarding-point").value;
-        let DEPARTURE_POINT = document.getElementById("Departure-point").value;
-        let TYPE_OF_SEATING = document.getElementById("Type-of-seating").value;
-        let JOURNEY_DATE = document.getElementById("Journey-Date").value;
-        let TIME = document.getElementById("Time").value;
-        let PRICE_OF_TICKET = document.getElementById("Price-of-Ticket").value;
-        let AGE = document.getElementById("Age").value;
-        const userJourney = {
-        BOARDING_POINT,
-        DEPARTURE_POINT,
-        TYPE_OF_SEATING,
-        JOURNEY_DATE,
-        TIME,
-        PRICE_OF_TICKET,
-        AGE
-        };
-        journeyData.push(userJourney); 
-        displayJourneyDetails(); 
-        }
-        function displayJourneyDetails() {
-        const outputDiv = document.getElementById("output");
-        outputDiv.innerHTML = ''; 
-        journeyData.forEach((journey, index) => {
-        const journeyDetails = `
-            <div class="user-details">
-                <h4>Journey ${index + 1}</h4>
-                <p>Boarding Point: ${journey.BOARDING_POINT}</p>
-                <p>Departure Point: ${journey.DEPARTURE_POINT}</p>
-                <p>Type of Seating: ${journey.TYPE_OF_SEATING}</p>
-                <p>Journey Date: ${journey.JOURNEY_DATE}</p>
-                <p>Time: ${journey.TIME}</p>
-                <p>Price of Ticket: ${journey.PRICE_OF_TICKET} INR</p>
-                <p>Age: ${journey.AGE}</p>
-            </div>
-        `;
-        outputDiv.innerHTML += journeyDetails;
-        });
-        }
+        
+        
     </script>
 </body>
 </html>
